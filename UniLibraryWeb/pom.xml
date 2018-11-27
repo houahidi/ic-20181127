@@ -27,6 +27,7 @@
         <version>2.2</version>
         <configuration>
           <server>tomcat-server-dev</server>
+          <url>http://localhost:8888/manager/text/</url>
         </configuration>
       </plugin>
       
