@@ -7,10 +7,7 @@
   <name>Uni Library</name>
   <description>projet de gestion de l'inventaire d'une bibliothèque</description>
   
-  
-  
-  
-  
+ 
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
@@ -32,6 +29,14 @@
           <server>tomcat-server-dev</server>
         </configuration>
       </plugin>
+      
+      <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-site-plugin -->
+	<plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-site-plugin</artifactId>
+	    <version>3.7.1</version>
+	</plugin>
+      
     
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
