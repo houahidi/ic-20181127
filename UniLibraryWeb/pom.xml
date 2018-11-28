@@ -9,6 +9,48 @@
 	<name>Uni Library</name>
 	<description>projet de gestion de l'inventaire d'une bibliothèque</description>
 
+   <reporting>
+   	<plugins>
+   <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin -->
+		<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-checkstyle-plugin</artifactId>
+		    <version>3.0.0</version>
+		</plugin>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-jxr -->
+		<plugin>
+		    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jxr-plugin -->
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-jxr-plugin</artifactId>
+		    <version>3.0.0</version>
+		</plugin>
+		<!-- 
+		<plugin>
+		  <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>findbugs-maven-plugin</artifactId>
+		    <version>3.0.5</version>  		
+  		</plugin>
+  		 -->
+  		<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.7</version>
+		</plugin>
+		<!-- 
+		 <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-javadoc-plugin</artifactId>
+	        <version>3.0.1</version>
+		</plugin>
+		 -->
+   </plugins>
+   		
+   </reporting>
+
+
+
+
 	<distributionManagement>
 
 		<repository>
