@@ -7,6 +7,26 @@
   <name>Uni Library</name>
   <description>projet de gestion de l'inventaire d'une bibliothèque</description>
   
+<distributionManagement>
+ 
+ 	<repository>
+			<id>nexus-repo</id>
+			<name>My releases</name>
+			<url>http://localhost:8081/repository/maven-releases/</url>	
+					
+		</repository>
+		
+		<!-- Publish snapshots here -->
+		<snapshotRepository>
+			<id>nexus-repo</id>
+			<name>My snapshots</name>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+			
+	</snapshotRepository>
+	
+ 
+</distributionManagement>
+ 
  
   <build>
     <sourceDirectory>src</sourceDirectory>
